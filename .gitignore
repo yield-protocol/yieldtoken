@@ -1,0 +1,10 @@
+node_modules
+build
+.vscode
+truffle-config.js
+truffle-deploy.log
+coverage
+coverage.json
+.solcover.js
+info.rar
+script/operator.test.json

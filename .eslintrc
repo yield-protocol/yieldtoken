@@ -1,0 +1,54 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "prettier"
+    ],
+    "plugins": ["import", "prettier","mocha-no-only",
+        "promise"],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js"]
+            }
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": false,
+        "node": true,
+        "jquery": false,
+        "jest": true
+    },
+    "rules": {
+        "quotes": 0,
+        "no-console": 0,
+        "no-debugger": 1,
+        "no-var": 1,
+        "no-trailing-spaces": 0,
+        "eol-last": 0,
+        "no-underscore-dangle": 0,
+        "no-alert": 0,
+        "no-lone-blocks": 0,
+        "import/extensions": 1,
+        "import/no-named-as-default": 0,
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "endOfLine":"auto"
+            }
+        ]
+    },
+    "globals": {
+        "Atomics": false,
+        "SharedArrayBuffer": false,
+        "artifacts": false,
+        "context": false,
+        "contract": false,
+        "assert": false,
+        "web3": false
+    }
+}

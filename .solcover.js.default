@@ -1,0 +1,9 @@
+module.exports = {
+    providerOptions: {
+        fork: "http://localhost:8545",
+        mnemonic: ""
+    },
+    skipFiles: [
+        
+    ]
+};
